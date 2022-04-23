@@ -6,7 +6,6 @@ const Users = () => {
 	// State
 	const [userProfile, setUserProfile] = useState([]);
 	const [favoriteComic, setFavoriteComic] = useState([]);
-	const [collection, setCollection] = useState([]);
 
 	// API async function
 	const fetchComics = async () => {
