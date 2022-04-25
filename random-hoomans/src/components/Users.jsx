@@ -45,23 +45,24 @@ const Users = () => {
 						<div className='user'>
 							<div className='userInfo'>
 								<h2>
-									{user.name.first}
-									<span> </span>
-									{user.name.last}
+									{user.name.first}&nbsp;{user.name.last}
 								</h2>
 
 								<p className='gender'>
-									<FaTransgender /> {user.gender}
+									<FaTransgender className='icon' /> {user.gender}
 								</p>
 								<p>
-									<AiOutlineMail /> {user.email}
+									<AiOutlineMail className='icon' /> {user.email}
 								</p>
 								<p>
-									<FaHome /> {user.location.street.number} {user.location.street.name}
-									{user.location.city}, {user.location.state}, {user.location.postcode}
+									<FaHome className='icon' /> {user.location.street.number}{" "}
+									{user.location.street.name}
+									{user.location.city}, {user.location.state},{" "}
+									{user.location.postcode}
 								</p>
 								<p>
-									<FaBook /> Favorite Comic Book: {favoriteComic.title}
+									<FaBook className='icon' /> Favorite Comic Book:{" "}
+									{favoriteComic.title}
 								</p>
 							</div>
 							<div className='phoneButton'>
